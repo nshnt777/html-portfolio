@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head> 
+
+<body>
+    <h1 class="text-center">Welcome to CalC</h1>
+    <div class="container flex item-center bg-black mx-auto">
+        <div class="row">
+            <input class="input" type="text">
+        </div>
+        <div class="row">
+            <button class="button" id="clear">C</button>
+            <button class="button green" id="back"><i class="material-icons">backspace</i></button>
+            <button class="button green">%</button>
+            <button class="button green">&divide;</button>
+        </div>
+        <div class="row">
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">9</button>
+            <button class="button green">&times;</button>
+        </div>
+        <div class="row">
+            <button class="button">4</button>
+            <button class="button">5</button>
+            <button class="button">6</button>
+            <button class="button green">-</button>
+        </div>
+        <div class="row">
+            <button class="button">3</button>
+            <button class="button">2</button>
+            <button class="button">1</button>
+            <button class="button green">+</button>
+        </div>
+        <div class="row">
+            <button class="button" style="padding: 0;">+/-</button>
+            <button class="button">0</button>
+            <button class="button">.</button>
+            <button class="button green" id="equal">=</button>
+        </div>
+    </div>
+
+    <script src="calc.js"></script>
+
+</body>
+</html>
