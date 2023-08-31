@@ -3,32 +3,38 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Nishant Lamichhane</title>
+        <title>Nishant Lamichhane Portfolio</title>
+        <link rel="stylesheet" href="./assests/styles/styles.css">
     </head>
 
     <body>
-        <h1>Nishant Lamichhane's Portfolio</h1>
-        <ul style="list-style: none;">
-            <li><a href="./about.html">About Me</a></li>
-            <li>
-                <details>
-                    <summary>Contact Me</summary>
-                    Phone: +91 7289989893 <br>
-                    E-mail: nishantnl2003@outlook.com
-                </details>
-            </li>
-        </ul>
-        <p>I am a Web developer. Following are a few projects I've made: </p>
-        <hr/>
-        <h3><a href="./public/Flipkart/index.html">Flipkart clone</a></h3>
-        <img src="./assests/images/Flipkart.png" alt="Flipkart clone" height="200px">
-        <hr/>
-        <h3><a href="./public/Gym/index.html">Gym Form website</a></h3>
-        <img src="./assests/images/GYM.png" alt="Gym Website" height="200px">
-        <hr/>
-        <h3><a href="./public/Calculator/index.html">A simple Calculator</a></h3>
-        <img src="./assests/images/Calci.png" alt="A Calculator" height="200px">
+        <div class="container">
+            <div class="sidebar">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            
+            <div class="main">
+                <div class="info">
+                    <div class="devInfo">
+                        <div class="hello">Hi, I am</div>
+                        <div class="name">Nishant Lamichhane</div>
+                        <div class="about">- a Web Developer, Designer</div>
+                        <div class="moreAbout">I am a web developer and a game enthusiast.<br>Scroll Down to know more about me.</div>
+                    </div>
+                    <div class="devPic"> <img src="./assests/images/my_pic.png" alt="Nishant Lamichhane's Photo"></div>
+                </div>
 
-
+                <div class="aboutMe">
+                    I am Nishant Lamichhane, I'm a CS student and a web developer. I can create front end web pages using pure HTML, CSS and JavaScript. I can also make backend apps using ExpressJS, MongoDB and Mongoose. I also have experience in programming languages like C/C++ and Java, and also have a decent hold on Data Structures and Algorithm. I am a huge game enthusiast and have recently started dipping my toes into game development using Unreal Engine 5. 
+                </div>
+            </div>
+        </div>
     </body>
 </html>
