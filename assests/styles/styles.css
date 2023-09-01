@@ -37,12 +37,13 @@ html{
 }
 
 .sidebar nav{
-    padding: 40px;
+    margin: 20vh auto;
+    padding: 60px;
 }
 
 .sidebar nav li{
     list-style: none;
-    font-size: 25px;
+    font-size: 2rem;
     font-weight: 600;
     padding: 25px 0px;
 }
@@ -63,56 +64,25 @@ html{
     margin: auto;
 }
 
-.info{
-    /* background-color: yellowgreen; */
-    height:70vh;
-    width: 80vw;
-    margin: 21vh auto;
-    margin-bottom: 12vh;
-    display: flex;
-    justify-content:space-around;
+
+
+.hamburger{
+    cursor: pointer;
+    position: fixed;
+    top: 2vh;
+    left: 1vw;
 }
 
-.aboutMe{
-    margin: 5vh auto;
-    padding: 10px;
-    font-size: 1.375rem;
-    background-color: var(--themeCol);
-    border-radius: 5px;
+#cross{
+    margin-top: 20px;
+    margin-left: 200px;
+    width: 50px;
 }
 
-.devPic img{
-    height: 70vh;
-    background-color: var(--themeCol);
-    border-radius: 5px;
-}
-
-.devInfo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.hello{
-    font-size: 2.5rem;
-    font-weight: 300;
-}
-
-.name{
-    font-size: 3.125rem;
-    font-weight: bold;
-}
-
-.about{
-    font-size: 2.188rem;
-}
-
-.moreAbout{
-    font-size: 1.875rem;
-    font-weight: lighter;
-    margin: 20px;
-    padding: 20px;
+#ham{
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 50px;
 }
 
 @media only screen and (max-width: 1215px) {
@@ -122,29 +92,34 @@ html{
     html{
         font-size: 1.5vw;
     }
+    .sidebar nav li{
+        font-size: 3rem;
+    }
+    #cross{
+        margin-left: 300px;
+        width: 70px;
+    }
+    
+    #ham{
+        width: 70px;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
-    .devPic{
-        display: none;
-    }
     html{
         font-size: 1.7vw;
     }
+    .sidebar nav li{
+        font-size: 4rem;
+    }
+    #cross{
+        margin-left: 180px;
+        width: 70px;
+    }
+    
+    #ham{
+        width: 70px;
+    }
 }
 
-.hamburger{
-    cursor: pointer;
-    position: fixed;
-    top: 15px;
-    left: 15px;
-}
 
-#cross{
-    margin-left: 155px;
-}
-
-#ham{
-    margin-top: 5px;
-    margin-left: 5px;
-}
