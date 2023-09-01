@@ -26,6 +26,7 @@ h1{
 }
 @media only screen and (max-width: 480px) {
     .container{
+        height: 60vh;
         scale: 1.1;
         max-width: 100vw;
     }
