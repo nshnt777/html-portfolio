@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
+html{
+    font-size: 1vw;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -18,12 +22,18 @@
 
 .sidebar{
     /* background-color: red; */
-    width: 15vw;
+    /* width: 15vw; */
     height: 100vh;
     background-color: var(--themeCol);
-    /* position: fixed; */
-    /* top: 0; */
-    /* left: 0; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    transition: transform 0.3s ease-in;
+}
+
+.sidebarGO{
+    transform: translateX(-100vw);
 }
 
 .sidebar nav{
@@ -49,6 +59,8 @@
 .main{
     /* background-color: yellow; */
     width: 85vw;
+    padding: 23px;
+    margin: auto;
 }
 
 .info{
@@ -64,7 +76,7 @@
 .aboutMe{
     margin: 5vh auto;
     padding: 10px;
-    font-size: 22px;
+    font-size: 1.375rem;
     background-color: var(--themeCol);
     border-radius: 5px;
 }
@@ -83,22 +95,56 @@
 }
 
 .hello{
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 300;
 }
 
 .name{
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: bold;
 }
 
 .about{
-    font-size: 35px;
+    font-size: 2.188rem;
 }
 
 .moreAbout{
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: lighter;
     margin: 20px;
     padding: 20px;
+}
+
+@media only screen and (max-width: 1215px) {
+    .devPic{
+        display: none;
+    }
+    html{
+        font-size: 1.5vw;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .devPic{
+        display: none;
+    }
+    html{
+        font-size: 1.7vw;
+    }
+}
+
+.hamburger{
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+}
+
+#cross{
+    margin-left: 155px;
+}
+
+#ham{
+    margin-top: 5px;
+    margin-left: 5px;
 }
